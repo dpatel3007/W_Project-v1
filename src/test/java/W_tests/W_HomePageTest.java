@@ -21,10 +21,10 @@ public class W_HomePageTest extends W_TestBase {
 		w_homepage = new W_HomePage(); 
 		}
 	
-//	@Test
-//	public void verifyLogoTest() throws InterruptedException {
-//		w_homepage.verifyLogo();
-//	}
+	@Test
+	public void verifyLogoTest() throws InterruptedException {
+		w_homepage.verifyLogo();
+	}
 	
 //	@Test
 //	public void HeaderDealsTest() throws InterruptedException {
