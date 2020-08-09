@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54336" started-at="2020-08-06T05:01:13Z" finished-at="2020-08-06T05:02:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54336" started-at="2020-08-06T05:01:13Z" finished-at="2020-08-06T05:02:08Z">
+      <class name="W_tests.W_RegistrationTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:W_tests.W_RegistrationTest@64bfbc86]" name="SetUp" is-config="true" duration-ms="7089" started-at="2020-08-06T05:01:13Z" finished-at="2020-08-06T05:01:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method status="PASS" signature="verifyRegistrationInvalidPassTest()[pri:4, instance:W_tests.W_RegistrationTest@64bfbc86]" name="verifyRegistrationInvalidPassTest" duration-ms="47011" started-at="2020-08-06T05:01:20Z" finished-at="2020-08-06T05:02:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegistrationInvalidPassTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:W_tests.W_RegistrationTest@64bfbc86]" name="tearDown" is-config="true" duration-ms="206" started-at="2020-08-06T05:02:07Z" finished-at="2020-08-06T05:02:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- W_tests.W_RegistrationTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
