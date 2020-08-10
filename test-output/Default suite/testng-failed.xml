@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="W_tests.W_RegistrationTest">
+      <class name="W_tests.W_SearchSortFilterTest">
         <methods>
-          <include name="verifyRegistrationInvalidEmailTest"/>
           <include name="SetUp"/>
           <include name="tearDown"/>
+          <include name="verifyCategory_Filter_Sort_Test"/>
         </methods>
-      </class> <!-- W_tests.W_RegistrationTest -->
+      </class> <!-- W_tests.W_SearchSortFilterTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

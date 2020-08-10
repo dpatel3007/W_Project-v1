@@ -21,10 +21,10 @@ public class W_MyAccountSettingsTest extends W_TestBase {
 		w_myaccountsettings = new W_MyAccountSettings(); 
 	}
 	
-//	@Test
-//	public void accountSignInTest() throws InterruptedException {
-//		w_myaccountsettings.accountSignIn();
-//	}
+	@Test
+	public void accountSignInTest() throws InterruptedException {
+		w_myaccountsettings.accountSignIn();
+	}
 	
 	@AfterMethod
 	public void tearDown() {

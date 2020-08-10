@@ -21,15 +21,15 @@ public class W_SearchSortFilterTest extends W_TestBase {
 		w_searchsortfilter = new W_SearchSortFilter(); // created LoginPage class object
 	}
 	
-//	@Test
-//	public void verifyCountsTest() throws InterruptedException {
-//		w_searchsortfilter.verifyCounts();
-//	}
-//	
-//	@Test
-//	public void verifySearch_Filter_Sort_Test() throws InterruptedException {
-//		w_searchsortfilter.verifySearch_Filter_Sort();
-//	}
+	@Test
+	public void verifyCountsTest() throws InterruptedException {
+		w_searchsortfilter.verifyCounts();
+	}
+	
+	@Test
+	public void verifySearch_Filter_Sort_Test() throws InterruptedException {
+		w_searchsortfilter.verifySearch_Filter_Sort();
+	}
 	
 	@Test
 	public void verifyCategory_Filter_Sort_Test() throws InterruptedException {

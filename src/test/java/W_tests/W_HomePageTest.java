@@ -26,61 +26,67 @@ public class W_HomePageTest extends W_TestBase {
 		w_homepage.verifyLogo();
 	}
 	
-//	@Test
-//	public void HeaderDealsTest() throws InterruptedException {
-//		w_homepage.verifyHeaderDeals();
-//	}
-//	
-//	@Test
-//	public void HeaderB2STest() throws InterruptedException {
-//		w_homepage.verifyHeaderBack2School();
-//	}
-//	
-//	@Test
-//	public void HeaderOutdoorLivingTest() throws InterruptedException {
-//		w_homepage.verifyHeaderOutdoorLiving();
-//	}
-//	
-//	@Test
-//	public void HeaderToysTest() throws InterruptedException {
-//		w_homepage.verifyHeaderToys();
-//	}
-//	
-//	@Test
-//	public void HeaderElectronicsTest() throws InterruptedException {
-//		w_homepage.verifyHeaderElectronics();
-//	}
-//	
-//	@Test
-//	public void HeaderClothingTest() throws InterruptedException {
-//		w_homepage.verifyHeaderClothing();
-//	}
 	
-//	@Test
-//	public void BannerShippingTest() throws InterruptedException {
-//		w_homepage.verifyBannerShipping();
-//	}
-//	
-//	@Test
-//	public void BannerCovid19Test() throws InterruptedException {
-//		w_homepage.verifyBannerCovid19();
-//	}
-//	
-//	@Test
-//	public void BannerMarketplaceTest() throws InterruptedException {
-//		w_homepage.verifyBannerMarketplace();
-//	}
-//	
-//	@Test
-//	public void BannerCreditcardTest() throws InterruptedException {
-//		w_homepage.verifyBannerCreditcard();
-//	}
-//	
-//	@Test
-//	public void BannerPhotoCenterTest() throws InterruptedException {
-//		w_homepage.verifyBannerPhotoCenter();
-//	}
-//	
+	
+	@Test
+	public void verifyHeaderDealsTest() throws InterruptedException {
+		w_homepage.verifyHeaderDeals();
+	}
+	
+	@Test
+	public void verifyHeaderBack2SchoolTest() throws InterruptedException {
+		w_homepage.verifyHeaderBack2School();
+	}
+	
+	@Test
+	public void verifyHeaderOutdoorLivingTest() throws InterruptedException {
+		w_homepage.verifyHeaderOutdoorLiving();
+	}
+	
+	@Test
+	public void verifyHeaderToysTest() throws InterruptedException {
+		w_homepage.verifyHeaderToys();
+	}
+	
+	@Test
+	public void verifyHeaderElectronicsTest() throws InterruptedException {
+		w_homepage.verifyHeaderElectronics();
+	}
+	
+	@Test
+	public void verifyHeaderClothingTest() throws InterruptedException {
+		w_homepage.verifyHeaderClothing();
+	}
+	
+	
+	
+	@Test
+	public void verifyBannerShippingTest() throws InterruptedException {
+		w_homepage.verifyBannerShipping();
+	}
+	
+	@Test
+	public void verifyBannerCovid19Test() throws InterruptedException {
+		w_homepage.verifyBannerCovid19();
+	}
+	
+	@Test
+	public void verifyBannerMarketplaceTest() throws InterruptedException {
+		w_homepage.verifyBannerMarketplace();
+	}
+	
+	@Test
+	public void verifyBannerCreditcardTest() throws InterruptedException {
+		w_homepage.verifyBannerCreditcard();
+	}
+	
+	@Test
+	public void verifyBannerPhotoCenterTest() throws InterruptedException {
+		w_homepage.verifyBannerPhotoCenter();
+	}
+	
+	
+
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();

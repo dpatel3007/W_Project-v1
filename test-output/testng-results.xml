@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="54336" started-at="2020-08-06T05:01:13Z" finished-at="2020-08-06T05:02:08Z">
+  <suite name="Default suite" duration-ms="24424" started-at="2020-08-10T02:23:34Z" finished-at="2020-08-10T02:23:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="54336" started-at="2020-08-06T05:01:13Z" finished-at="2020-08-06T05:02:08Z">
-      <class name="W_tests.W_RegistrationTest">
-        <test-method status="PASS" signature="SetUp()[pri:0, instance:W_tests.W_RegistrationTest@64bfbc86]" name="SetUp" is-config="true" duration-ms="7089" started-at="2020-08-06T05:01:13Z" finished-at="2020-08-06T05:01:20Z">
+    <test name="Default test" duration-ms="24424" started-at="2020-08-10T02:23:34Z" finished-at="2020-08-10T02:23:59Z">
+      <class name="W_tests.W_MyAccountSettingsTest">
+        <test-method status="PASS" signature="SetUp()[pri:0, instance:W_tests.W_MyAccountSettingsTest@64bfbc86]" name="SetUp" is-config="true" duration-ms="6914" started-at="2020-08-10T02:23:34Z" finished-at="2020-08-10T02:23:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method status="PASS" signature="verifyRegistrationInvalidPassTest()[pri:4, instance:W_tests.W_RegistrationTest@64bfbc86]" name="verifyRegistrationInvalidPassTest" duration-ms="47011" started-at="2020-08-06T05:01:20Z" finished-at="2020-08-06T05:02:07Z">
+        <test-method status="PASS" signature="accountSignInTest()[pri:0, instance:W_tests.W_MyAccountSettingsTest@64bfbc86]" name="accountSignInTest" duration-ms="17228" started-at="2020-08-10T02:23:41Z" finished-at="2020-08-10T02:23:58Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyRegistrationInvalidPassTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:W_tests.W_RegistrationTest@64bfbc86]" name="tearDown" is-config="true" duration-ms="206" started-at="2020-08-06T05:02:07Z" finished-at="2020-08-06T05:02:08Z">
+        </test-method> <!-- accountSignInTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:W_tests.W_MyAccountSettingsTest@64bfbc86]" name="tearDown" is-config="true" duration-ms="254" started-at="2020-08-10T02:23:58Z" finished-at="2020-08-10T02:23:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- W_tests.W_RegistrationTest -->
+      </class> <!-- W_tests.W_MyAccountSettingsTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

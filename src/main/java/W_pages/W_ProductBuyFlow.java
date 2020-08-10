@@ -1,5 +1,6 @@
 package W_pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import W_base.W_TestBase;
 
 public class W_ProductBuyFlow extends W_TestBase {
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	// Page Factory
 
@@ -91,6 +94,8 @@ public class W_ProductBuyFlow extends W_TestBase {
 		Thread.sleep(3000);
 		firstTshirt.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,350)", "");
+		Thread.sleep(5000);
 		sizeXXL.click();
 		Thread.sleep(5000);
 		IncreaseQuantity.click();
@@ -119,6 +124,8 @@ public class W_ProductBuyFlow extends W_TestBase {
 		Thread.sleep(3000);
 		firstTshirt.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,350)", "");
+		Thread.sleep(5000);
 		IncreaseQuantity.click();
 		Thread.sleep(5000);
 		addToCart.click();
@@ -146,6 +153,8 @@ public class W_ProductBuyFlow extends W_TestBase {
 		Thread.sleep(3000);
 		firstTshirt.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,350)", "");
+		Thread.sleep(5000);
 		IncreaseQuantity.click();
 		Thread.sleep(5000);
 		addToCart.click();
@@ -166,6 +175,8 @@ public class W_ProductBuyFlow extends W_TestBase {
 		searchButton.click();
 		Thread.sleep(3000);
 		firstTshirt.click();
+		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,350)", "");
 		Thread.sleep(5000);
 		addToCart.click();
 		Thread.sleep(3000);

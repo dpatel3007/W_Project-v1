@@ -1,5 +1,6 @@
 package W_pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -7,6 +8,8 @@ import org.openqa.selenium.support.PageFactory;
 import W_base.W_TestBase;
 
 public class W_Registration extends W_TestBase {
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	//Page Factory
 	
@@ -69,6 +72,8 @@ public class W_Registration extends W_TestBase {
 		enterEmail.sendKeys("abc123@gmail.com");
 		createAccount.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,250)", "");
+		Thread.sleep(3000);
 		firstName.sendKeys("hello");
 		Thread.sleep(3000);
 		lastName.sendKeys("world");
@@ -124,6 +129,8 @@ public class W_Registration extends W_TestBase {
 		enterEmail.sendKeys("abc123@gmail.com");
 		createAccount.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,250)", "");
+		Thread.sleep(3000);
 		firstName.sendKeys("$$$$");
 		Thread.sleep(3000);
 		lastName.sendKeys("world");
@@ -170,6 +177,8 @@ public class W_Registration extends W_TestBase {
 		enterEmail.sendKeys("abc123@gmail.com");
 		createAccount.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,250)", "");
+		Thread.sleep(3000);
 		firstName.sendKeys("hello");
 		Thread.sleep(3000);
 		lastName.sendKeys("$$$");
@@ -217,6 +226,8 @@ public class W_Registration extends W_TestBase {
 		enterEmail.sendKeys("abc123@gmail.com");
 		createAccount.click();
 		Thread.sleep(5000);
+		js.executeScript("window.scrollBy(0,250)", "");
+		Thread.sleep(3000);
 		firstName.sendKeys("hello");
 		Thread.sleep(3000);
 		lastName.sendKeys("world");

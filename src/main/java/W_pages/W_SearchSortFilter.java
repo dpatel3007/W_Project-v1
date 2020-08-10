@@ -1,5 +1,6 @@
 package W_pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -8,6 +9,8 @@ import org.openqa.selenium.support.PageFactory;
 import W_base.W_TestBase;
 
 public class W_SearchSortFilter extends W_TestBase {
+	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	Actions action = new Actions(driver);
 	
@@ -20,7 +23,7 @@ public class W_SearchSortFilter extends W_TestBase {
 	@FindBy(xpath = "//div[@id='riHzES5']//div[1]//a[1]//article[1]")
 	WebElement FruitsVeg;
 	
-	@FindBy(xpath = "//div[contains(@class,'imgtile_title')]//span[contains(text(),'Apples')]")
+	@FindBy(xpath = "//div[@class='imgtile_title']//span[contains(text(),'Apples')]")
 	WebElement Apple;
 	
 	@FindBy(id = "shelf-sort-count")
@@ -39,13 +42,16 @@ public class W_SearchSortFilter extends W_TestBase {
 	@FindBy(xpath = "//span[contains(text(),'Under $1')]")
 	WebElement under1filter;
 	
-	@FindBy(xpath = "//button[contains(text(),'Customer Rating')]")
-	WebElement ratingFilter;
+	@FindBy(xpath = "//label[contains(text(),'Colour')]")
+	WebElement colorFilter;
 	
-	@FindBy(xpath = "//li[@id='rmi-customerrating-id-0']//a")
-	WebElement fiveRating;
+	@FindBy(xpath = "//span[contains(text(),'Black')]")
+	WebElement blackColor;
 	
-	@FindBy(xpath = "//a[contains(text(),'Newest')]")
+	@FindBy(xpath = "//div[@class='css-iz0wk1 eyeokp24'][contains(text(),'Best Match')]")
+	WebElement sort;
+	
+	@FindBy(xpath = "//span[contains(text(),'Newest')]")
 	WebElement newestSort;
 	
 	//Category_Filter_Sort Example
@@ -76,7 +82,11 @@ public class W_SearchSortFilter extends W_TestBase {
 			public void verifyCounts() throws InterruptedException {
 				Grocery.click();
 				Thread.sleep(5000);
+				js.executeScript("window.scrollBy(0,350)", "");
+				Thread.sleep(5000);
 				FruitsVeg.click();
+				Thread.sleep(5000);
+				js.executeScript("window.scrollBy(0,650)", "");
 				Thread.sleep(5000);
 				Apple.click();
 				Thread.sleep(5000);
@@ -89,21 +99,29 @@ public class W_SearchSortFilter extends W_TestBase {
 				Thread.sleep(2000);
 				searchbutton.click();
 				Thread.sleep(5000);
-				ratingFilter.click();
+				js.executeScript("window.scrollBy(0,750)", "");
+				Thread.sleep(5000);
+				colorFilter.click();
 				Thread.sleep(2000);
-				fiveRating.click();
-				Thread.sleep(6000);
+				blackColor.click();
+				Thread.sleep(8000);
+				sort.click();
+				Thread.sleep(4000);
 				newestSort.click();
 				Thread.sleep(5000);
 			}
 			
 			public void verifyCategory_Filter_Sort() throws InterruptedException {
 				electronics.click();
+				Thread.sleep(7000);
+				js.executeScript("window.scrollBy(0,1450)", "");
 				Thread.sleep(5000);
 				brandFilter.click();
 				Thread.sleep(5000);
 				appleBrand.click();
 				Thread.sleep(9000);
+				js.executeScript("window.scrollBy(0,550)", "");
+				Thread.sleep(5000);
 				ipodSort.click();
 				Thread.sleep(5000);
 			}

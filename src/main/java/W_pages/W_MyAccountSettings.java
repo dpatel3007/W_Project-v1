@@ -35,7 +35,7 @@ public class W_MyAccountSettings extends W_TestBase {
 		
 		signIn.click();
 		Thread.sleep(3000);
-		email.sendKeys("dhruvvpatel30@gmail.com");
+		email.sendKeys("dhruvpatel@gmail.com");
 		Thread.sleep(3000);
 		password.sendKeys("Dj7405177602");
 		Thread.sleep(3000);
